@@ -32,4 +32,4 @@ function Signing() {
   )
 }
 
-export default Signing 
+export default Signing
