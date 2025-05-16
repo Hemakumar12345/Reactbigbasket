@@ -1,71 +1,73 @@
-/* Signing.css */
-
+/* Container styling */
 .signin-container {
   max-width: 400px;
-  margin: 80px auto;
+  margin: 50px auto;
   padding: 30px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
   background-color: #ffffff;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
 }
 
+/* Heading */
 .signin-container h2 {
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   color: #333;
-  font-weight: 600;
 }
 
+/* Form layout */
 .signin-container form {
   display: flex;
   flex-direction: column;
 }
 
-.signin-container input {
-  padding: 12px;
-  margin-bottom: 20px;
-  border-radius: 6px;
+/* Input & Select fields */
+.signin-container input,
+.signin-container select {
+  padding: 10px;
+  margin: 10px 0;
   border: 1px solid #ccc;
-  font-size: 15px;
-  transition: border-color 0.3s;
+  border-radius: 6px;
+  font-size: 1rem;
 }
 
-.signin-container input:focus {
-  outline: none;
-  border-color: #007bff;
-  box-shadow: 0 0 4px rgba(0, 123, 255, 0.3);
-}
-
-.signin-container button {
+/* Submit button */
+.signin-container button[type="submit"] {
   padding: 12px;
-  background-color: #007bff;
-  color: #fff;
-  font-size: 16px;
+  margin-top: 15px;
+  background-color: #28a745;
   border: none;
+  color: white;
+  font-size: 1rem;
   border-radius: 6px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
-.signin-container button:hover {
-  background-color: #0056b3;
+.signin-container button[type="submit"]:hover {
+  background-color: #218838;
 }
 
-.signin-container p {
-  text-align: center;
-  margin-top: 20px;
-  font-size: 14px;
-  color: #555;
-}
-
-.signin-container a {
+/* Link-style toggle buttons */
+.link-button {
+  background: none;
+  border: none;
   color: #007bff;
-  text-decoration: none;
-  font-weight: 500;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0;
+  margin-left: 5px;
 }
 
-.signin-container a:hover {
-  text-decoration: underline;
+.link-button:hover {
+  color: #0056b3;
+}
+
+/* Paragraph text */
+.signin-container p {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 0.95rem;
 }
