@@ -1,0 +1,98 @@
+/* Base container styling */
+.home-container {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #e0ecff, #f4f8ff);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Elegant tagline */
+.tagline {
+  font-size: 1.3rem;
+  color: #2e3a59;
+  margin-bottom: 40px;
+  font-weight: 500;
+}
+
+/* Grid layout */
+.category-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+/* Card base */
+.category-card {
+  text-decoration: none;
+  border-radius: 15px;
+  width: 240px;
+  padding: 25px;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Shared card styles */
+.category-card h2 {
+  margin: 15px 0 10px;
+  font-size: 1.4rem;
+}
+
+.category-card p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: #f0f0f0;
+}
+
+/* Hover animation */
+.category-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+
+/* Individual category themes with gradients */
+.veg {
+  background: linear-gradient(135deg, #4caf50, #81c784);
+}
+
+.non-veg {
+  background: linear-gradient(135deg, #d32f2f, #f44336);
+}
+
+.milk {
+  background: linear-gradient(135deg, #2196f3, #64b5f6);
+}
+
+.chocolate {
+  background: linear-gradient(135deg, #6d4c41, #a1887f);
+}
+
+.cart {
+  background: linear-gradient(135deg, #009688, #4db6ac);
+}
+
+.order {
+  background: linear-gradient(135deg, #673ab7, #9575cd);
+}
+
+/* Optional glow effect */
+.category-card:hover::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 15px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  pointer-events: none;
+  animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+  }
+  to {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+  }
+}

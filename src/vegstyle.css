@@ -1,0 +1,89 @@
+.veg-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.veg-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #2c3e50;
+}
+
+.veg-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.veg-card {
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.veg-card:hover {
+  transform: translateY(-5px);
+}
+
+.veg-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.veg-price {
+  font-size: 1rem;
+  color: #27ae60;
+  margin: 10px 0;
+}
+
+.add-to-cart-btn {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #219150;
+}
+
+.pagination-controls {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.pagination-controls button {
+  margin: 0 5px;
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: white;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.pagination-controls button:hover {
+  background-color: #eee;
+}
+
+.pagination-controls button.active {
+  background-color: #27ae60;
+  color: white;
+  border-color: #27ae60;
+}
+
+.pagination-controls button:disabled {
+  background-color: #ddd;
+  color: #888;
+  cursor: not-allowed;
+}
