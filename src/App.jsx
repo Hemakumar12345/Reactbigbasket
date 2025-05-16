@@ -48,7 +48,9 @@ function App() {
           <Link to="/contactUs">ContactUs</Link>
           {/* <Link to="/Pagenation">Pagenation</Link> */}
 
-          {/* <Link to="/signout">signout</Link> */}
+          <Link to="/signout">signout</Link>
+
+           
           {isAuthenticated?(
             <div>
               <span>Welcome,{currentUser.username}</span>
