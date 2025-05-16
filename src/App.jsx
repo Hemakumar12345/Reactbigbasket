@@ -75,7 +75,8 @@ function App() {
           <Route path="/contactUs" element={<ContactUs />} />
           {/* <Route path="/Pagenation" element={<Pagenation />} /> */}
           
-          <Route path="/signup" element={<Signup />} />
+          <Route path="/signout" element={<Signup />} />
+
 
         </Routes>
         
